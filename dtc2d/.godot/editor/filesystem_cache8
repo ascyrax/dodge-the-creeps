@@ -1,8 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1734001290
+::res://::1734064098
+hud.gd::GDScript::-1::1734064004::0::1::::<>CanvasLayer<>::
+hud.tscn::PackedScene::4331604004315951811::1734064080::0::1::::<><>::res://hud.gd<>uid://cmdyieh87xn05::::res://fonts/Xolonium-Regular.ttf
 icon.svg::CompressedTexture2D::2275490193541437295::1733991988::1733991992::1::::<><>::
-player.gd::GDScript::-1::1733996031::0::1::::<>Area2D<>::
-player.tscn::PackedScene::1946822602770980325::1733996049::0::1::::<><>::uid://dbsc0xbc23ses::::res://art/playerGrey_up1.png<>res://player.gd<>uid://cq1a5orv1kjce::::res://art/playerGrey_up2.png<>uid://dbxkqtyb6pb8j::::res://art/playerGrey_walk1.png<>uid://rrcqq3fr8ar7::::res://art/playerGrey_walk2.png
+main.gd::GDScript::-1::1734064079::0::1::::<>Node<>::
+main.tscn::PackedScene::6633690243520379098::1734064080::0::1::::<><>::res://main.gd<>uid://dgqy8q60xikvl::::res://mob.tscn<>uid://20b5bygis2e8::::res://player.tscn<>uid://b2yi5df2n2asx::::res://hud.tscn<>uid://dd6qgkrwrbds5::::res://art/gameover.wav
+mob.gd::GDScript::-1::1734005591::0::1::::<>RigidBody2D<>::
+mob.tscn::PackedScene::7614942185427197837::1734062836::0::1::::<><>::res://mob.gd<>uid://xy6alkr5n27n::::res://art/enemyFlyingAlt_1.png<>uid://ctiwlwdwoux7u::::res://art/enemyFlyingAlt_2.png<>uid://cu5aaadwm1ask::::res://art/enemySwimming_1.png<>uid://bcx0jubwblxfk::::res://art/enemySwimming_2.png<>uid://dr3yiagj78enj::::res://art/enemyWalking_1.png<>uid://dvq8tuseor8lt::::res://art/enemyWalking_2.png
+player.gd::GDScript::-1::1734004319::0::1::::<>Area2D<>::
+player.tscn::PackedScene::1946822602770980325::1734062835::0::1::::<><>::uid://dbsc0xbc23ses::::res://art/playerGrey_up1.png<>res://player.gd<>uid://cq1a5orv1kjce::::res://art/playerGrey_up2.png<>uid://dbxkqtyb6pb8j::::res://art/playerGrey_walk1.png<>uid://rrcqq3fr8ar7::::res://art/playerGrey_walk2.png
 ::res://art/::1733992162
 enemyFlyingAlt_1.png::CompressedTexture2D::1665771290565871137::1722317234::1733992162::1::::<><>::
 enemyFlyingAlt_2.png::CompressedTexture2D::6124300997282329904::1722317234::1733992162::1::::<><>::

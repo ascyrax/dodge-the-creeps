@@ -2,6 +2,7 @@ extends Node
 
 @export var mob_scene: PackedScene
 var score
+var highScore = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -17,14 +18,17 @@ func game_over() -> void:
 	$ScoreTimer.stop()
 	$MobTimer.stop()
 	
-	$HUD.show_game_over()
+	highScore = max(score, highScore)
+	$HUD.show_game_over(highScore)
 	$Music.stop()
 	$DeathSound.play()
+	
 
 func new_game():
 	score = 0
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
+	$ScoreTimer.start()
 	
 	$HUD.update_score(score)
 	$HUD.show_message("Get Ready")
@@ -59,7 +63,10 @@ func _on_mob_timer_timeout() -> void:
 
 
 func _on_score_timer_timeout() -> void:
+	print("score timer timeout")
 	score+=1
+	$HUD.update_score(score)
+	
 
 
 func _on_start_timer_timeout() -> void:
